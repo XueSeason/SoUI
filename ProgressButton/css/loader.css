@@ -1,0 +1,61 @@
+body {
+  padding: 20px 50px;
+  background-color: #666;
+}
+
+.loader {
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  background-color: #ff3948;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  transition-property: right;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  right: 50%;
+}
+
+.bar:hover {
+  position: absolute;
+  background-color: #ff3948;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.info {
+  position: absolute;
+  color: #ff3948;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bar div {
+  z-index: 1;
+  width: 100px;
+  position: absolute;
+  display: block;
+  color: white;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
